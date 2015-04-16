@@ -6,7 +6,6 @@ irc::irc()
 	srand(time(NULL));
 	USER = "IS" + std::to_string(rand());
 	NICK = IRC_NICK_PREFIX + std::to_string(rand());
-	command_center = command_control(this);
 }
 
 

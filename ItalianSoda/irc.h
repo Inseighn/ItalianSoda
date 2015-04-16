@@ -1,6 +1,5 @@
 #pragma once
 #include "sock_connection.h"
-#include "command_control.h"
 #include <random>
 #include <iostream>
 #include <time.h>
@@ -35,7 +34,6 @@ private:
 	std::thread irc_message_loop_thread;
 
 	sock_connection irc_connection;
-	command_control command_center;
 
 	void irc_message_loop();
 };
